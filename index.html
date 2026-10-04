@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fffdfa">
+    <meta name="description" content="Lwandile Ntshangase is a data science student interested in backend development, data, and AI.">
+    <title>Lwandile Ntshangase | Data Science Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#home" aria-label="Lwandile Ntshangase home">LN</a>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Hi, I am</p>
+                <h1>Lwandile <span>Ntshangase</span></h1>
+                <p class="hero-role">Data Science Student | Backend &amp; Database Development</p>
+                <p class="hero-description">
+                    I'm building my skills in
+                    database development, data analysis, and AI through study and hands-on projects.
+                </p>
+                <div class="hero-actions">
+                    <a class="pill-button pill-button-light" href="#projects">View My Work</a>
+                    <a class="pill-button pill-button-light" href="#contact">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-portrait">
+                <img src="images/home.jpeg" alt="Portrait of Lwandile Ntshangase">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-photo">
+                <img src="images/about.jpeg" alt="Lwandile seated in a black outfit">
+            </div>
+            <div class="about-copy">
+                <p class="section-kicker">A little about me</p>
+                <h2>Who am I?</h2>
+                <p>
+                    I am a 2nd Year Data Science student with a strong interest in technology, artificial intelligence, and the ways
+                    technology can be used to solve real-world problems. I enjoy understanding how things work and experimenting with 
+                    ideas. Through my studies and projects, I've explored data, backend
+                    and database development, and AI, while developing a growing appreciation for both the technical and human side of 
+                    building technology.
+                </p>
+                <p>
+                    Looking ahead, I want to continue deepening my knowledge of artificial intelligence and machine learning, and strengthen 
+                    my software and data skills. I'm excited to keep learning, taking on new challenges, and turning ideas into solutions 
+                    that are genuinely useful to the people they are designed for.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-heading">
+                <p class="section-kicker">Learning by building</p>
+                <h2>Projects</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <button class="project-trigger" type="button" aria-haspopup="dialog" data-project-details="endo-sense-details">
+                        <span class="project-card-art project-card-art-endo" aria-hidden="true"><img src="images/telemedicine.png" alt=""></span>
+                        <span class="project-copy">
+                            <span class="project-title">Women's Health Telemedicine Platform</span>
+                            <span class="project-summary">Available on Github <span aria-hidden="true">·</span></span>
+                        </span>
+                    </button>
+                </article>
+                <article class="project-card">
+                    <button class="project-trigger" type="button" aria-haspopup="dialog" data-project-details="data-science-details">
+                        <span class="project-card-art project-card-art-data" aria-hidden="true"><img src="images/data-analysis.png" alt=""></span>
+                        <span class="project-copy">
+                            <span class="project-title">Online Retail Data Analysis and Prediction</span>
+                            <span class="project-summary">Available on Github</span>
+                        </span>
+                    </button>
+                </article>
+                <article class="project-card">
+                    <button class="project-trigger" type="button" aria-haspopup="dialog" data-project-details="identify-details">
+                        <span class="project-card-art project-card-art-identify" aria-hidden="true"><span></span></span>
+                        <span class="project-copy">
+                            <span class="project-title">AI-Assisted Identification System</span>
+                            <span class="project-summary">Incubation Project</span>
+                        </span>
+                    </button>
+                </article>
+                <article class="project-card">
+                    <button class="project-trigger" type="button" aria-haspopup="dialog" data-project-details="cyber-details">
+                        <span class="project-card-art project-card-art-cyber" aria-hidden="true"><img src="images/cybersecurity.png" alt=""></span>
+                        <span class="project-copy">
+                            <span class="project-title">Cyber Security Awareness</span>
+                            <span class="project-summary">Available on Github</span>
+                        </span>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <dialog class="project-dialog" aria-labelledby="project-dialog-title">
+            <div class="project-dialog-header">
+                <h2 id="project-dialog-title"></h2>
+                <button class="project-dialog-close" type="button" aria-label="Close project details">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="project-dialog-content"></div>
+        </dialog>
+
+        <template id="endo-sense-details">
+            <div class="project-detail-layout">
+                <div class="project-detail-art project-demo project-card-art-endo">
+                    <span aria-hidden="true">ES</span>
+                    <video controls autoplay muted playsinline preload="metadata" data-video-src="videos/telemedicine-demo.mp4" aria-label="Telemedicine System demo video"></video>
+                    <p class="project-demo-status" role="status" hidden></p>
+                </div>
+                <div class="project-detail-copy">
+                    <p class="section-kicker">Project details</p>
+                    <section>
+                        <h3>My role</h3>
+                        <p>Backend Developer</p>
+                    </section>
+                    <section>
+                        <h3>Overview</h3>
+                        <p>A digital healthcare platform designed to support women's health through digital records, risk assessment, and practitioner access.</p>
+                    </section>
+                    <section>
+                        <h3>My contributions</h3>
+                        <p>Developed backend services. Designed database schema and SQLite structure. Implemented authentication services and session management. Built CRUD functionality. Collaborated on the system design and solution. </p>
+                        <p><strong>Result: 1st Place at the KZN Tech Mbokodo Hackathon in August 2026.</strong></p>
+                    </section>
+                    <section>
+                        <h3>Tools &amp; technologies I used</h3>
+                        <p>Flask | Python | SQLite</p>
+                    </section>
+                </div>
+            </div>
+        </template>
+
+        <template id="data-science-details">
+            <div class="project-detail-layout">
+                <div class="project-detail-art project-demo project-card-art-data">
+                    <span aria-hidden="true">DS</span>
+                    <video controls autoplay muted playsinline preload="metadata" data-video-src="videos/data-analysis-demo.mp4" aria-label="Data analysis project demo video"></video>
+                    <p class="project-demo-status" role="status" hidden></p>
+                </div>
+                <div class="project-detail-copy">
+                    <p class="section-kicker">Project details</p>
+                    <section>
+                        <h3>My role</h3>
+                        <p>Data Analyst</p>
+                    </section>
+                    <section>
+                        <h3>Overview</h3>
+                        <p>Analysis of an online retail dataset to understand factors associated with sales and build a predictive regression model. The project involved exploratory data analysis, statistical modelling, feature selection, model evaluation and interpretation.</p>
+                    </section>
+                    <section>
+                        <h3>My contributions</h3>
+                        <p>Data cleaning and preprocessing. Exploratory data analysis and Visualisations to identify patterns and relationships. Feature engineering and selection of potential predictors. Regression modelling using SFS. Model evaluation comparing adjusted R, RMSE, MSE, AIC and BIC. Statistical diagnosis.</p>
+                        <p><strong>Results: Developed and compared multiple regression models to predict sales, identifying key factors influencing sales performance.</strong></p>
+                    </section>
+                    <section>
+                        <h3>Tools &amp; technologies I used</h3>
+                        <p>Python | Pandas | NumPy | Matplotlib | Seaborn | Scikit-learn</p>
+                    </section>
+                </div>
+            </div>
+        </template>
+
+        <template id="identify-details">
+            <div class="project-detail-layout">
+                <div class="project-detail-art project-demo project-card-art-identify">
+                    <span class="project-no-demo" aria-hidden="true">No Demo Available. Incubation Project.</span>
+                </div>
+                <div class="project-detail-copy">
+                    <p class="section-kicker">Project details</p>
+                    <section>
+                        <h3>My role</h3>
+                        <p>Backend Developer.</p>
+                    </section>
+                    <section>
+                        <h3>Overview</h3>
+                        <p>AI-assisted digital investigation system designed to support the identification and investigation of cases by connecting AI-assisted image analysis with a central investigation platform. The project combines image processing, AI, data storage and a dashboard to support investigators.</p>
+                    </section>
+                    <section>
+                        <h3>My contributions</h3>
+                        <p>Worked on the backend architecture and API design for the identification system. Integration of captured images, AI results, and system components. Worked on the database and data-storage architecture. Collaborated on integrating AI and security via hashing and Firebase.</p>
+                        <p><strong>Result: 3rd Place at the Annual Geekulcha Hackathon in September 2026.</strong></p>
+                    </section>
+                    <section>
+                        <h3>Tools &amp; technologies I used</h3>
+                        <p>Node.js | Express | Firebase |SQLite </p>
+                    </section>
+                </div>
+            </div>
+        </template>
+
+        <template id="cyber-details">
+            <div class="project-detail-layout">
+                <div class="project-detail-art project-demo project-card-art-cyber">
+                    <span aria-hidden="true">CY</span>
+                    <video controls autoplay muted playsinline preload="metadata" data-video-src="videos/cyber-security-awareness-demo.mp4" aria-label="Cyber security awareness demo video"></video>
+                    <p class="project-demo-status" role="status" hidden></p>
+                </div>
+                <div class="project-detail-copy">
+                    <p class="section-kicker">Project details</p>
+                    <section>
+                        <h3>My role</h3>
+                        <p>Frontend Developer.</p>
+                    </section>
+                    <section>
+                        <h3>Overview</h3>
+                        <p>A cybersecurity awareness project designed to demonstrate how malicious software threats can affect users. The project used a simulated downloader trojan attack scenario to educate users about cybersecurity risks and safer digital behaviour. </p>
+                    </section>
+                    <section>
+                        <h3>My contributions</h3>
+                        <p>Developed the frontend/interface: mock search engine and mock textbook website.
+                            Designed the user experience and flow of the project.
+                            Collaborated with Security and Graphic Design students to demonstrate the impact of malicious software and educate users on cybersecurity best practices.</p>
+                        <p><strong>Result: 1st Place in the Cybersecurity Awareness Competition at Eduvos Durban in September 2026.</strong></p>
+                    </section>
+                    <section>
+                        <h3>Tools &amp; technologies I used</h3>
+                        <p>HTML | CSS | JavaScript</p>
+                    </section>
+                </div>
+            </div>
+        </template>
+
+        <section class="contact" id="contact">
+            <img class="contact-photo" src="images/profile.jpeg" alt="" aria-hidden="true">
+            <div class="contact-details">
+                <h2>View My Work</h2>
+                <a class="pill-button pill-button-dark" href="https://github.com/MsLwandile" target="_blank" rel="noopener noreferrer">
+                   <i class="fa-brands fa-github"></i> Github</a>
+            </div>
+            <div class="contact-note contact-column">
+                <h2>Connect with Me</h2>
+                <a class="pill-button pill-button-dark" href="https://www.linkedin.com/in/lwandile-ntshangase-x" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+                </a>
+            </div>
+            <div class="contact-email contact-column">
+                <h2>Contact Me</h2>
+                <a class="pill-button pill-button-dark" href="mailto:lwandilentshangase1@gmail.com">
+                    <i class="fa-regular fa-envelope" aria-hidden="true"></i> lwandilentshangase1@gmail.com
+                </a>
+            </div>
+            <p class="contact-intro">
+                I'm always ready to learn, collaborate, and take on meaningful challenges in data and technology.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo" href="#home" aria-label="Back to top">LN</a>
+        <p>© <span id="year">2026</span> Lwandile Ntshangase</p>
+        <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
